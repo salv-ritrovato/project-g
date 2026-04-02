@@ -1,3 +1,4 @@
+import rawgClient from "../api/rawg"
 
 function App() {
 
