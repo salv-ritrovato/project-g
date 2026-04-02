@@ -1,7 +1,34 @@
-# Workflow
-# PHASE 1
-1) installed Vite and Axios (axios@1.13.6)
-2) added .env file with API key and put it on gitignore / added env.example template file that shows which environment variable my project needs
-3) created an API folder with a rawg.js file containing my axios import & api import
-4) created a components folder with my first component, Header
-5) installed bootstrap, declared two useStates, one to catch user's input and the other one to add games from the array to the list of games; created a function that prevents default page reload and adds games from the API to the games array, created a navbar into Header.jsx
+## 📌 Phase 1 - Setup & Basic Features
+### 1. Project Initialization
+* Installed **Vite**
+* Installed **Axios** (`axios@1.13.6`)
+
+### 2. Environment Configuration
+* Created a `.env` file to store the API key
+* Added `.env` to `.gitignore`
+* Created an `env.example` file to document required environment variables
+
+### 3. API Setup
+* Created an `api/` folder
+* Added `rawg.js` file:
+  * Configured Axios
+  * Set up API request logic
+
+### 4. Components Structure
+* Created a `components/` folder
+* Built the first component: `Header.jsx`
+
+### 5. UI & State Management
+* Installed **Bootstrap**
+* Added two `useState` hooks:
+  * `input` → stores user input
+  * `games` → stores fetched games list
+* Implemented a function to:
+  * prevent default form submission
+  * fetch data from the API
+  * update the games state
+* Created a navbar inside `Header.jsx`
+
+### 6. App Logic Refactor
+* Moved all main logic into `App.jsx` to resolve bugs
+* Rendered a sample list of games based on user input

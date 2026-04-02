@@ -1,16 +1,4 @@
-export default function Header() {
-    
-  const [games, setGames] = useState([]);
-  const [search, setSearch] = useState('');
-
-  function handleSearch(e) {
-    e.preventDefault();
-    if (!search) return;
-    rawgClient.get("/games", { params: { search } })
-      .then(res => setGames(res.data.results))
-      .catch(err => console.error(err));
-    setSearch('');
-  }
+export default function Header({ handleSearch, search, setSearch}) {
 
     return (
         <header>
