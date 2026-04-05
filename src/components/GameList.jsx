@@ -1,8 +1,8 @@
-export default function GameList({ games }) {
+export default function GameList({ games, advancedSearch }) {
 
     return (
         <ul className="list-group">
-            {games?.map(game => (
+            {advancedSearch?.map(game => (
                 <li key={game.id} className="list-group-item d-flex align-items-center gap-3">
                     <img
                         src={game.background_image || "https://via.placeholder.com/120x67"}

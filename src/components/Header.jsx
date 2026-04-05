@@ -1,4 +1,4 @@
-export default function Header({ handleSearch, search, setSearch}) {
+export default function Header({ handleSearch, search, setSearch }) {
 
     return (
         <header>
